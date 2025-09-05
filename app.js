@@ -10,7 +10,7 @@ function clickBurguer() {
 
     // Mudança do ícone com animação (sem rotação)
     if (menu.classList.contains('expandido')) {
-        icon.style.transform = 'scaleY(1.4) scaleX(1.65)';
+        icon.style.transform = 'scaleY(1.33) scaleX(1.65)';
     } else {
         icon.style.transform = 'scaleY(1) scaleX(1.5)';
     }
