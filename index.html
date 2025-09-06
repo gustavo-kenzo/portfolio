@@ -4,23 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Gustavo Kenzo</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
+    
+    <!-- CSS Modular -->
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/home.css">
 </head>
 
-<body>
+<body class="home-page">
     <header class="cabecalho">
-
         <div class="cabecalho__nome">Gustavo Kenzo Almeida de Castro</div>
 
         <div class="cabecalho__menu-burguer">
             <div class="material-icons" onclick="clickBurguer()">menu</div>
             <nav class="cabecalho__menu-burguer__menu">
-                <a class="cabecalho__menu-burguer__menu__link" href="">Home</a>
-                <a class="cabecalho__menu-burguer__menu__link" href="">About Me</a>
-                <a class="cabecalho__menu-burguer__menu__link" href="">Projects</a>
-                <a class="cabecalho__menu-burguer__menu__link" href="">Contact</a>
+               <a class="cabecalho__menu-burguer__menu__link" href="./index.html">Home</a>
+                <a class="cabecalho__menu-burguer__menu__link" href="./about.html">About Me</a>
+                <a class="cabecalho__menu-burguer__menu__link" href="./projects.html">Projects</a>
+                <a class="cabecalho__menu-burguer__menu__link" href="./contact.html">Contact</a>
             </nav>
         </div>
     </header>
@@ -40,9 +43,10 @@
                 aspernatur! Quidem quam veniam reprehenderit veritatis, ex neque sequi ut sed similique pariatur quia
                 quaerat vero saepe.
             </p>
-            <a class="apresentacao__conteudo__explore" href="">Explore now</a>
+            <a class="apresentacao__conteudo__explore" href="./about.html">Explore now</a>
         </section>
     </main>
+    
     <script src="./app.js"></script>
 </body>
 
