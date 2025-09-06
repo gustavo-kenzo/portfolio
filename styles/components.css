@@ -86,9 +86,15 @@
     }
     .cabecalho__menu-burguer{
         gap: 34px;
+        /* align-items: start; */
         /* height: 100%; */
     }
     .cabecalho__menu-burguer__menu.expandido{
-        gap: 34px;
+        gap: 24px;
+         /* max-width: calc(100vw-200px); */
+        /* max-width: 70%; */
+    }
+    .cabecalho__menu-burguer__menu__link{
+        font-size: 13px;
     }
 }
