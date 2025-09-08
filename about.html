@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
+
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/about.css">
 </head>
 
-<body>
+<body class="about-page">
     <header class="cabecalho">
 
         <div class="cabecalho__nome">Gustavo Kenzo Almeida de Castro</div>
@@ -26,32 +29,33 @@
     </header>
 
     <main class="apresentacao">
-        <section>
-            <h1>
-                Introduction
-                <div></div>
-            </h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt nihil harum nisi ex quos praesentium,
-                quasi saepe enim! Labore, voluptas porro? Culpa iusto possimus eligendi debitis. Nesciunt ipsa expedita
-                doloremque.</p>
+        <section class="apresentacao__conteudo">
+            <div class="apresentacao__conteudo__container-titulo">
+                <h1 class="apresentacao__conteudo__container-titulo__titulo">Introduction                </h1>
+                <div class="apresentacao__conteudo__container-titulo__linha"></div>
 
-            <div>
-                <section>
+            </div>
+
+            <p class="apresentacao__conteudo__paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt</p>
+
+            <div class="apresentacao__conteudo__secoes">
+                <section class="apresentacao__conteudo__secoes__secao">
                     <h1>What I Do</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, unde laboriosam, suscipit vero
-                        quidem consectetur nemo sapiente quam autem, inventore aut quo dolorem architecto. Doloribus
-                        officiis culpa porro recusandae? Nostrum?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
                 </section>
-                <section>
+                <section class="apresentacao__conteudo__secoes__secao">
                     <h1>My Skills</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, ea officiis. Temporibus,
-                        similique dolorum. Et minus placeat officia? Molestias officiis voluptates provident. Eos
-                        repellat, sunt recusandae sequi enim delectus sed.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
                 </section>
             </div>
 
         </section>
-        <img src="./assets/wolfgang-weiser-cD65KXnj0lQ-unsplash.jpg" alt="Foto de Wolfgang Weiser na Unsplash">
+        <img class="apresentacao__banner-principal" src="./assets/zakaria-el-bazi-nLkFdjDK9CY-unsplash.jpg"
+            alt="Foto de Zakaria EL BAZI na Unsplash">
     </main>
 
     <script src="./app.js"></script>
