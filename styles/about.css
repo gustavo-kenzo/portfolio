@@ -53,3 +53,7 @@
     flex-direction: column;
     gap: 20px;
 }
+
+.apresentacao__conteudo__secoes__secao__titulo{
+    font-size: 1.0625rem;
+}
