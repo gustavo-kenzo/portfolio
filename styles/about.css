@@ -18,7 +18,7 @@
 .apresentacao__conteudo {
     display: flex;
     flex-direction: column;
-    gap: 45px;
+    gap: 55px;
     width: auto;
     /* padding-top: 26px; */
 }
@@ -27,20 +27,20 @@
     display: flex;
     width: fit-content;
     flex-direction: column;
-    gap: 10px;
+    gap: 16px;
 
 }
 .apresentacao__conteudo__container-titulo__titulo {
     font-family: var(--font-secundaria);
     font-size: 60px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.11;
 }
 
 .apresentacao__conteudo__container-titulo__linha{
     background-color: var(--cor-texto);
     width: 32%;
-    height: 1px;
+    height: 2px;
 }
 
 .apresentacao__conteudo__secoes{
@@ -55,5 +55,5 @@
 }
 
 .apresentacao__conteudo__secoes__secao__titulo{
-    font-size: 1.0625rem;
+    font-size: 18px;
 }
