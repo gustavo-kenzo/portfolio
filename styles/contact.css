@@ -91,19 +91,10 @@ body {
     background-size: contain;
     background-position: center;
     transform: scale(1.1);
-
-    /* Fallback: material icons */
-      display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    color: var(--cor-texto);
-    font-family: 'Material Icons';
 }
 
 .apresentacao__conteudo__lista__item:nth-child(1)::before {
-    background-image: url('../assets/logos/contact_phone_100dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.pn');
-    content: 'TEL';
+    background-image: url('../assets/logos/contact_phone_100dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png');
 }
 
 .apresentacao__conteudo__lista__item:nth-child(2)::before {
