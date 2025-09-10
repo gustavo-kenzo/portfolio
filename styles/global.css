@@ -40,3 +40,7 @@ body {
 .material-icons:hover {
     cursor: pointer;
 }
+
+img{
+    filter: grayscale(80%);
+}
