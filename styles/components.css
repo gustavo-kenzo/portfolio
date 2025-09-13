@@ -75,26 +75,224 @@
     border-radius: 2px;
 }
 
-@media(max-width: 768px){
-    .cabecalho{
-        height: 75px;
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /*  */
+    .cabecalho {
+        /* margin-top: 10px; */
+        padding: 20px;
     }
-    .cabecalho__nome{
+
+    .cabecalho__nome {
+        font-size: 0.95em;
+    }
+
+    .cabecalho__menu-burguer {
+        gap: 30px;
+    }
+
+    .cabecalho__menu-burguer__menu.expandido {
+        max-width: 500px;
+        gap: 30px;
+    }
+
+    .cabecalho__menu-burguer__menu__link {
+        font-size: 0.9em;
+        padding: 6px 10px;
+    }
+
+    .btn-primary {
+        padding: 20px 28px;
+        font-size: 1em;
+        min-width: 140px;
+    }
+}
+
+/* 📱 MOBILE - 481px a 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    .cabecalho {
+        padding: 15px;
+        min-height: 70px;
+    }
+
+    .cabecalho__nome {
+        font-size: 0.85em;
+        max-width: 200px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
     }
-    .cabecalho__menu-burguer{
-        gap: 34px;
-        /* align-items: start; */
-        /* height: 100%; */
+
+    .cabecalho__menu-burguer {
+        /* gap: var(--gap-mobile); */
+        gap: 30px;
+        align-items: center;
     }
-    .cabecalho__menu-burguer__menu.expandido{
-        gap: 24px;
-         /* max-width: calc(100vw-200px); */
-        /* max-width: 70%; */
+
+    .cabecalho__menu-burguer__menu.expandido {
+        max-width: 350px;
+        /* gap: var(--gap-mobile); */
+        gap: 30px;
     }
-    .cabecalho__menu-burguer__menu__link{
-        font-size: 13px;
+
+    .cabecalho__menu-burguer__menu__link {
+        font-size: 0.8em;
+        padding: 5px 8px;
+    }
+
+    .btn-primary {
+        padding: 18px 24px;
+        font-size: 0.95em;
+        min-width: 120px;
+    }
+
+    .linha-decorativa {
+        height: 2px;
+    }
+}
+
+/* 📱 MOBILE SMALL - até 480px */
+@media (max-width: 480px) {
+    .cabecalho {
+        padding: 12px;
+        min-height: 65px;
+        flex-wrap: nowrap;
+    }
+
+    .cabecalho__nome {
+        font-size: 0.75em;
+        max-width: 150px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .cabecalho__menu-burguer {
+        gap: 15px;
+    }
+
+    .cabecalho__menu-burguer__menu.expandido {
+        max-width: 280px;
+        gap: 15px;
+    }
+
+    .cabecalho__menu-burguer__menu__link {
+        font-size: 0.75em;
+        padding: 4px 6px;
+    }
+
+    .btn-primary {
+        padding: 16px 20px;
+        font-size: 0.9em;
+        min-width: 100px;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .linha-decorativa {
+        height: 2px;
+    }
+}
+
+/* 📱 MOBILE EXTRA SMALL - até 360px */
+@media (max-width: 360px) {
+    .cabecalho {
+        padding: 10px 12px;
+        min-height: 60px;
+    }
+
+    .cabecalho__nome {
+        font-size: 0.7em;
+        max-width: 120px;
+    }
+
+    .cabecalho__menu-burguer {
+        gap: 10px;
+    }
+
+    .cabecalho__menu-burguer__menu.expandido {
+        max-width: 250px;
+        gap: 12px;
+    }
+
+    .cabecalho__menu-burguer__menu__link {
+        font-size: 0.7em;
+        padding: 3px 5px;
+    }
+
+    .btn-primary {
+        padding: 14px 18px;
+        font-size: 0.85em;
+    }
+}
+
+/* 🖥️ DESKTOP LARGE - acima de 1400px */
+@media (min-width: 1400px) {
+    .cabecalho {
+        padding: 30px 60px;
+    }
+
+    .cabecalho__nome {
+        font-size: 1.1em;
+    }
+
+    .cabecalho__menu-burguer {
+        gap: 90px;
+    }
+
+    .cabecalho__menu-burguer__menu.expandido {
+        max-width: 750px;
+        gap: 90px;
+    }
+
+    .cabecalho__menu-burguer__menu__link {
+        font-size: 1.05em;
+        padding: 10px 15px;
+    }
+
+    .btn-primary {
+        padding: 28px 36px;
+        font-size: 1.2em;
+        min-width: 180px;
+    }
+}
+
+/* ===== UTILITÁRIOS RESPONSIVOS ===== */
+.hide-mobile {
+    display: block;
+}
+
+.hide-desktop {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hide-mobile {
+        display: none;
+    }
+
+    .hide-desktop {
+        display: block;
+    }
+}
+
+/* ===== CLASSES DE CONTAINER RESPONSIVO ===== */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (min-width: 769px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding: 0 60px;
     }
 }

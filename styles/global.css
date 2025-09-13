@@ -44,3 +44,44 @@ body {
 img{
     filter: grayscale(80%);
 }
+
+@media (max-width: 768px) {
+    :root {
+        --font-tamanho: 16px; /* Maior legibilidade mobile */
+    }
+    
+    body {
+        font-size: var(--font-tamanho);
+    }
+    
+    .material-icons {
+        font-size: 140%;
+        transform: scaleX(1.2);
+    }
+}
+
+/* 📱 MOBILE SMALL - até 480px */
+@media (max-width: 480px) {
+    :root {
+        --font-tamanho: 15px;
+    }
+    
+    .material-icons {
+        font-size: 130%;
+        transform: scaleX(1.1);
+    }
+}
+
+/* 💻 TABLET - 769px a 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    :root {
+        --font-tamanho: 15px;
+    }
+}
+
+/* 🖥️ DESKTOP LARGE - acima de 1400px */
+@media (min-width: 1400px) {
+    :root {
+        --font-tamanho: 14px;
+    }
+}

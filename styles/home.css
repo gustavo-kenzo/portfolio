@@ -76,7 +76,7 @@
 }
 
 /* Responsividade para a página inicial */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .home-page{
         overflow: visible;
     }
@@ -124,5 +124,207 @@
     .apresentacao__conteudo__explore {
         width: 100%;
         max-width: 200px;
+    }
+} */
+ @media (min-width: 481px) and (max-width: 768px) {
+    .home-page {
+        overflow: auto;
+    }
+    
+    .apresentacao {
+        flex-direction: column;
+        gap: 40px;
+        height: auto;
+        padding: 30px 20px;
+        min-height: 100vh;
+    }
+    
+    .apresentacao__banner-principal {
+        width: 100%;
+        height: 45vh;
+        max-height: 350px;
+    }
+    
+    .apresentacao__conteudo {
+        gap: 35px;
+        text-align: center;
+    }
+    
+    .apresentacao__conteudo__titulo {
+        font-size: 55px;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .apresentacao__conteudo__linha {
+        width: 120px;
+        height: 2px;
+    }
+    
+    .apresentacao__conteudo__paragrafo {
+        width: 100%;
+        font-size: 0.95em;
+        line-height: 1.5;
+    }
+    
+    .apresentacao__conteudo__explore {
+        width: 180px;
+        padding: 20px 0;
+        font-size: 1em;
+    }
+}
+
+/* 📱 MOBILE - até 480px */
+@media (max-width: 480px) {
+    .home-page {
+        overflow: auto;
+    }
+    
+    .apresentacao {
+        flex-direction: column;
+        gap: 30px;
+        height: auto;
+        padding: 20px 15px;
+        min-height: 100vh;
+    }
+    
+    .apresentacao__banner-principal {
+        width: 100%;
+        height: 40vh;
+        max-height: 300px;
+        border-radius: 8px;
+    }
+    
+    .apresentacao__conteudo {
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .apresentacao__conteudo__titulo {
+        font-size: 45px;
+        flex-direction: column;
+        gap: 10px;
+        line-height: 1.2;
+    }
+    
+    .apresentacao__conteudo__linha {
+        width: 100px;
+        height: 2px;
+    }
+    
+    .apresentacao__conteudo__paragrafo {
+        width: 100%;
+        font-size: 0.9em;
+        line-height: 1.4;
+    }
+    
+    .apresentacao__conteudo__explore {
+        width: 100%;
+        max-width: 250px;
+        padding: 18px 0;
+        font-size: 0.95em;
+        margin: 0 auto;
+    }
+}
+
+/* 📱 MOBILE EXTRA SMALL - até 360px */
+@media (max-width: 360px) {
+    .apresentacao {
+        padding: 15px 10px;
+        gap: 25px;
+    }
+    
+    .apresentacao__banner-principal {
+        height: 35vh;
+        max-height: 250px;
+    }
+    
+    .apresentacao__conteudo {
+        gap: 25px;
+    }
+    
+    .apresentacao__conteudo__titulo {
+        font-size: 36px;
+        gap: 8px;
+    }
+    
+    .apresentacao__conteudo__linha {
+        width: 80px;
+    }
+    
+    .apresentacao__conteudo__paragrafo {
+        font-size: 0.85em;
+    }
+    
+    .apresentacao__conteudo__explore {
+        padding: 16px 0;
+        font-size: 0.9em;
+    }
+}
+
+/* ===== ANIMAÇÕES E EFEITOS ===== */
+@media (prefers-reduced-motion: no-preference) {
+    .apresentacao__banner-principal {
+        transition: transform 0.3s ease;
+    }
+    
+    .apresentacao__banner-principal:hover {
+        transform: scale(1.02);
+    }
+    
+    .apresentacao__conteudo__titulo {
+        animation: slideInFromRight 0.8s ease-out;
+    }
+    
+    .apresentacao__conteudo__paragrafo {
+        animation: slideInFromRight 0.8s ease-out 0.2s both;
+    }
+    
+    .apresentacao__conteudo__explore {
+        animation: slideInFromBottom 0.8s ease-out 0.4s both;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== OTIMIZAÇÕES PARA PERFORMANCE ===== */
+@media (max-width: 768px) {
+    .apresentacao__banner-principal {
+        will-change: transform;
+    }
+    
+    .apresentacao__conteudo__explore {
+        touch-action: manipulation;
     }
 }
