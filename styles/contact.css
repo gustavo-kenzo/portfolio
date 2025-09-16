@@ -111,31 +111,6 @@ body {
     background-size: 26px;
 }
 
-@media (min-width: 1400px) {
-    .apresentacao {
-        margin: 0 220px 0 240px;
-        gap: 200px;
-    }
-    
-    .apresentacao__conteudo__container-titulo__titulo {
-        font-size: 70px;
-    }
-    
-    .apresentacao__conteudo__paragrafo {
-        font-size: 1.2em;
-        margin-top: 100px;
-        margin-bottom: 70px;
-    }
-    
-    .apresentacao__conteudo__lista {
-        gap: 20px;
-    }
-    
-    .apresentacao__conteudo__lista__item {
-        padding: 18px;
-    }
-}
-
 /* 💻 DESKTOP MEDIUM - 1025px a 1399px */
 @media (min-width: 1025px) and (max-width: 1399px) {
     .apresentacao {
